@@ -50,6 +50,7 @@ a {
     background: #00000052;
     width: 150px;
     visibility: hidden;
+    z-index: 3;
     opacity: 0;
     transition: linear all .3s; 
 }
@@ -64,11 +65,38 @@ a {
     opacity: 1;
 }
 
-.bgimg {
-    background-image: url(../images/home1.png);
-    background-repeat: no-repeat;
-    height: 662px;
-    background-size: cover;
+.bg1{
+    width: 1360px;
+    height: 800px;
+    background-color: #000000;
+    margin: 0 auto;
+    position: relative;
+}
+
+.box1{
+    width: 456px;
+    height: 134px;
+    background-color: #0613DB;
+    position: absolute;
+    top: 29%;
+    right: 34%;
+    z-index: 1;
+}
+
+.box2{
+    width: 456px;
+    height: 134px;
+    color: #ffffff;
+    background-color: #E9008B;
+    font-family: monospace;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 500;
+    position: absolute;
+    top: 27%;
+    right: 35%;
+    z-index: 2;
 }
 
 .main_menu ul li ul li ul {
@@ -85,7 +113,7 @@ a {
     height: 200px;
     background: #006a4d;
     position: relative;
-    margin: 700px 0;
+    margin: 800px 0;
 }
 
 .a2 {
