@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.container{
+    width: 970px;
+    margin: 0 auto;
+}
+
+.clr{
+    clear: both;
+}
+
+.flex{
+    display: flex;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.transition{
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+:root{
+    --teal: #3ca2a2;
+    --hover: #f18d26;
+    --red: #c00a11;
+}
+
+/* =====================================
+        common css end
+====================================== */
+/* =====================================
+        header css start
+====================================== */
+#header{
+    padding: 13px 0 16px;
+}
+
+.logo{
+    width: 83px;
+}
+
+.header_head{
+    width: 635px;
+}
+
+.header_head h2{
+    color: var(--teal);
+    font-size: 26px;
+    font-weight: 700;
+    padding-left: 7px;
+    line-height: 88px;
+}
+
+.header_num{
+    width: 252px;
+    text-align: right;
+}
+
+.header_num a{
+    color: #b76262;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 88px;
+}
+
+/* =====================================
+        header css end
+====================================== */
+/* =====================================
+        menu css start
+====================================== */
+#menu{
+    background: linear-gradient(to top,#ae1010 0%, #cf0511 100%);
+}
+
+.main_menu{
+    width: 870px;
+}
+
+.menu_icon{
+    width: 100px;
+    line-height: 50px;
+    text-align: right;
+}
+
+.main_menu ul li a{
+    line-height:50px ;
+    padding: 0 15px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    transition:all linear .3s;
+    -webkit-transition:all linear .3s;
+    -moz-transition:all linear .3s;
+    -ms-transition:all linear .3s;
+    -o-transition:all linear .3s;
+}
+
+.main_menu ul li a:hover{
+    background: var(--hover);
+}
+
+.menu_icon a i{
+    width: 26px;
+    height: 26px;
+    background: #fff;
+    color: var(--red);
+    line-height: 26px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+} 
+
+.menu_icon a:hover i{
+    background: var(--hover);
+    color: #fff;
+}
+
+/* =====================================
+        menu css end
+====================================== */
+/* =====================================
+        header css start
+====================================== */
+
+
+/* =====================================
+        header css end
+====================================== */
+/* =====================================
+        header css start
+====================================== */
+
+
+/* =====================================
+        header css end
+====================================== */
+/* =====================================
+        header css start
+====================================== */
+
+
+/* =====================================
+        header css end
+====================================== */

@@ -1,0 +1,561 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.container{
+    width: 970px;
+    margin: 0 auto;
+}
+
+.clr{
+    clear: both;
+}
+
+.flex{
+    display: flex;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.transition{
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+:root{
+    --teal: #3ca2a2;
+    --hover: #f18d26;
+    --red: #c00a11;
+    --heading:#215a6d;
+}
+
+/* =====================================
+        common css end
+====================================== */
+/* =====================================
+        header css start
+====================================== */
+#header{
+    padding: 13px 0 16px;
+}
+
+.logo{
+    width: 83px;
+}
+
+.header_head{
+    width: 635px;
+}
+
+.header_head h2{
+    color: var(--teal);
+    font-size: 26px;
+    font-weight: 700;
+    padding-left: 7px;
+    line-height: 88px;
+}
+
+.header_num{
+    width: 252px;
+    text-align: right;
+}
+
+.header_num a{
+    color: #b76262;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 88px;
+}
+
+/* =====================================
+        header css end
+====================================== */
+/* =====================================
+        menu css start
+====================================== */
+#menu{
+    background: linear-gradient(to top,#ae1010 0%, #cf0511 100%);
+}
+
+.main_menu{
+    width: 870px;
+}
+
+.menu_icon{
+    width: 100px;
+    line-height: 50px;
+    text-align: right;
+}
+
+.main_menu ul li a{
+    line-height:50px ;
+    padding: 0 15px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    transition:all linear .3s;
+    -webkit-transition:all linear .3s;
+    -moz-transition:all linear .3s;
+    -ms-transition:all linear .3s;
+    -o-transition:all linear .3s;
+}
+
+.main_menu ul li a:hover{
+    background: var(--hover);
+}
+
+.menu_icon a i{
+    width: 26px;
+    height: 26px;
+    background: #fff;
+    color: var(--red);
+    line-height: 26px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+} 
+
+.menu_icon a:hover i{
+    background: var(--hover);
+    color: #fff;
+}
+
+/* =====================================
+        menu css end
+====================================== */
+
+/* =====================================
+        banner css start
+====================================== */
+#banner{
+    padding: 75px 0px;
+}
+
+.banner_text{
+    width: 440px;
+}
+
+.banner_text h1{
+    color: var(--heading);
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.banner_text h1 span{
+    color: var(--heading);
+    font-size: 48px;
+    font-weight: 600;
+    font-style: italic;
+    display: block;
+}
+
+.banner_text p{
+    color: var(--heading);
+    font-size: 16px;
+    font-weight: 400;
+    padding-right: 150px;
+    line-height: 22px;
+    padding-top: 13px;
+}
+
+.banner_cont{
+    position: relative;
+}
+
+.banner_img{
+    width: 600px;
+    position: absolute;
+    right: -14px;
+    bottom: -75px;
+}
+
+
+.banner_img img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.banner_text a{
+    padding: 15px 25px;
+    background: #92c7a3;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    margin-top: 40px;
+}
+
+.banner_text a:hover{
+    background: var(--hover);
+}
+/* =====================================
+        banner css end
+====================================== */
+/* =====================================
+        service css start
+====================================== */
+#service{
+    padding: 75px 0;
+}
+
+.service_col{
+    text-align: center;
+    padding:0 23px;
+}
+
+.service_col img{
+    margin-top: 20px;
+}
+
+.service_col h4{
+    color: var(--teal);
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.service_col p{
+    color: var(--heading);
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 27px;
+}
+
+.service_col a{
+    color: var(--teal);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 0 89px 0;
+}
+
+.service_col a i{
+    color: #c70811;
+}
+
+
+/* =====================================
+        service css end
+====================================== */
+/* =====================================
+        video css start
+====================================== */
+#video{
+    padding: 30px 0;
+    background: #dfece6;
+}
+
+.video_col{
+    width: 45%;
+    margin-right: 30px;
+}
+
+.video_col:last-child{
+    margin-right: 0;
+}
+
+.common_head h2{
+    color: var(--heading);
+    font-size: 28px;
+    font-weight: 600;
+    position: relative;
+}
+
+.common_head h2::before,
+.common_head h2::after{
+    position: absolute;
+    content: '';
+    left: 0;
+}
+
+.common_head h2::before{
+    width: 54px;
+    height: 2px;
+    background: #ae1010;
+    z-index: 1;
+    bottom: -1;
+}
+
+.common_head h2::after{
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    bottom: 0;
+}
+
+.notice_inner ul{
+    padding-top: 33px;
+}
+
+
+.notice_inner ul li{
+    background: #fff;
+    color: var(--teal);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 42px;
+    padding-left: 15px;
+    border-bottom: 1px solid var(--teal);
+}
+
+.notice_inner ul li:last-child{
+    border-bottom: none;
+}
+
+.notice_inner ul li i{
+    padding: 0 18px;
+    background: #bf0a11;
+    color: #fff;
+    line-height: 42px;
+    font-size: 16px;
+    float: right;
+}
+
+.video_col a{
+    color: var(--red);
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 23px;
+}
+
+.notice_inner img{
+    width: 100%;
+    max-width: 100%;
+    margin-top: 43px;
+}
+/* =====================================
+        video css end
+====================================== */
+/* =====================================
+        gallery css start
+====================================== */
+.gal_col{
+    width: 30%;
+    margin-right: 32px;
+}
+
+.gal_col:last-child{
+    margin-right: 0;
+}
+
+#gallery{
+    padding: 75px 0;
+}
+
+.gal_border h2::after{
+    background: #eaeaea;
+}
+
+.news_inner h3{
+    color: var(--teal);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.news_inner p{
+    color: var(--heading);
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.news_inner p:nth-child(2){
+    border-bottom: 1px solid #dfece6;
+    padding-bottom: 30px;
+}
+
+.news_inner h3:nth-child(3){
+    padding-top: 30px;
+}
+
+.news_inner h3:first-child{
+    padding-top: 40px;
+}
+
+.news_inner a i{
+    color: var(--red);
+}
+
+.news_inner a{
+    color: var(--teal);
+    padding: 34px 0;
+}
+
+.news_inner ul{
+    padding-top: 45px;
+}
+
+.news_inner li{
+    color: var(--heading);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.news_inner li i{
+    color: var(--red);
+}
+
+.gal_photo img{
+    width: 44.85%;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    border: 4px solid #dfece6;
+}
+
+.gal_photo{
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.gal_photo img:nth-child(2){
+    margin-right: 0;
+}
+
+.gal_photo img:nth-child(4){
+    margin-right: 0;
+}
+/* =====================================
+        gallery css end
+====================================== */
+
+/* =====================================
+        doctors css start
+====================================== */
+#doctor{
+    padding: 75px 0;
+}
+
+.doc_inner img{
+    margin: 30px 0 20px;
+}
+
+.doc_inner h3{
+    color: var(--teal);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.doc_inner h4{
+    color: #a3a3a3;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.doc_inner h5{
+    color: var(--red);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.doc_img img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.doc_inner{
+    width: 31.26%;
+    margin-right: 30px;
+    float: left;
+}
+
+.doc_inner:last-child{
+    margin-right: 0;
+}
+/* =====================================
+        doctors css end
+====================================== */
+/* =====================================
+        footer css start
+====================================== */
+
+.footer_top{
+    padding: 24px 0 44px 0;
+    background: #222222;
+}
+
+.footer_1 h4{
+    color: var(--teal);
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 88px;
+    margin-left: 10px;
+}
+.footer_heading h4{
+    color: var(--teal);
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 46px;
+}
+.footer_heading ul{
+    margin-top: 25px;
+}
+.footer_heading ul li a {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.footer_heading ul li a i{
+    color: var(--red);
+    margin-right: 5px;
+    padding-top: 20px;
+}
+.footer_heading ul li a:hover{
+    color: var(--hover);
+}
+.footer_heading{
+    float: left;
+    width: 25%;
+}
+.footer_bottom{
+    padding: 18px 0;
+    background: var(--red);
+}
+.footer_bottom p{
+    color: #c6ded9;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* =====================================
+        footer css end
+====================================== */
