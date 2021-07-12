@@ -1,0 +1,957 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.transition{
+    transition: all liner .3s;
+    -webkit-transition: all liner .3s;
+    -moz-transition: all liner .3s;
+    -ms-transition: all liner .3s;
+    -o-transition: all liner .3s;
+}
+
+.clr{
+    clear: both;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex_wrap{
+    flex-wrap: wrap;
+}
+
+.justify_center{
+    justify-content: center;
+}
+
+.justify_end{
+    justify-content: end;
+}
+
+.align_center{
+    align-items: center;
+}
+
+.justify_btwn{
+    justify-content: space-between;
+}
+
+.text_center{
+    text-align: center;
+}
+
+.m_auto{
+    margin: 0 auto;
+}
+
+.px{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+:root{
+    --hover: #c7b299;
+    --heading: #555555;
+    --paragraph: #8c8c8c;
+    --monstrat :'Montserrat', sans-serif;
+    --raleway :'Raleway', sans-serif;
+}
+
+/* ==================================================
+            common css end
+================================================== */
+
+/* ==================================================
+            menu css start
+================================================== */
+#menu{
+    padding: 40px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.main_menu ul li a{
+    color: #fff;
+    padding: 0 15px;
+    font-family: var(--monstrat);
+    font-size: 14px;
+    font-weight: 400px;
+    text-transform: capitalize;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.main_menu ul li a:hover{
+    color: var(--hover);
+}
+/* ==================================================
+            menu css end
+================================================== */
+
+/* ==================================================
+            banner css start
+================================================== */
+#banner{
+    padding: 382px 0;
+}
+.banner_text{
+    width: 590px;
+}
+
+.banner_text h2{
+    color: #fff;
+    font-family: var(--raleway);
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.banner_text h1{
+    color: #fff;
+    font-family: var(--raleway);
+    font-size: 52px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.banner_text p{
+    color: #fff;
+    font-family: var(--monstrat);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.btn{
+    padding: 20px 37px;
+    background: #998675;
+    color: #fff;
+    font-family: var(--raleway);
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 23px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    box-shadow: 0 3px 0 0 #736357;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;   
+    -o-transition: all linear .3s;
+}
+
+.btn:hover{
+    box-shadow: 0 3px 0 0 #dfdcdc;
+    color: var(--hover);
+    background: #fff;
+}
+/* ==================================================
+            banner css end
+================================================== */
+
+/* ==================================================
+            service css start
+================================================== */
+#service{
+    padding: 80px 0;
+}
+
+.service_col{
+    width: 25%;
+    flex: 0 0 auto;
+}
+
+.service_col h4{
+    color: #555555;
+    font-family: var(--raleway);
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.service_col p{
+    color: #8c8c8c;
+    font-family: var(--monstrat);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.service_col p::before{
+    position: absolute;
+    content: '';
+    left: 50%;
+    bottom: 0;
+    width: 70px;
+    height: 3px;
+    background: #f1eee9;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.service_col i{
+    color: #555;
+    font-size: 22px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.service_col:hover i,
+.service_col:hover h4 {
+    color: var(--hover);
+}
+
+.service_col:hover p::before {
+    background: var(--hover);
+}
+/* ==================================================
+            service css end
+================================================== */
+/* ==================================================
+            idea css start
+================================================== */
+#idea{
+    padding-top: 80px;
+    background: #fbfaf8;
+}
+
+.comm_head{
+    width: 800px;
+}
+
+.comm_head h2{
+    color: var(--heading);
+    font-family: var(--raleway);
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.comm_head p{
+    color: var(--paragraph);
+    font-family: var(--monstrat);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    padding-bottom: 40px;
+}
+
+/* ==================================================
+            idea css end
+================================================== */
+/* ==================================================
+            purchase css start
+================================================== */
+#purchase{
+    padding: 50px 0;
+    background: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+}
+
+.purchase_text h2{
+    color: #c7b299;
+    font-family: var(--raleway);
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.purchase_text h2 span{
+    color: #fff;
+    font-family: var(--raleway);
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.purchase_text h3{
+    color: #473e3a;
+    font-family: var(--monstrat);
+    font-size: 18px;
+    font-weight: 300;
+}
+/* ==================================================
+            purchase css end
+================================================== */
+/* ==================================================
+            project css start
+================================================== */
+#project{
+    padding: 80px 0;
+}
+
+.project_menu ul li{
+    padding: 10px 18px;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    color: var(--paragraph);
+    font-family: var(--monstrat);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 0 10px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.project_menu ul li:hover{
+    background-color: var(--hover);
+    color: #fff;
+}
+
+.project_row{
+    margin-top: 40px;
+}
+
+.project_col{
+    width: 33.33%;
+}
+
+.project_img img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.project_col:nth-child(2),
+.project_col:nth-child(1),
+.project_col:nth-child(3){
+    margin-bottom: 30px;
+}
+
+.project_btn a{
+    margin-top: 40px;
+}
+
+
+.project_col h4 {
+    color: #c7b299;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--raleway);
+    padding-top: 30px;
+}
+
+.project_col p {
+    color: #d1d1d1;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: var(--monstrat);
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+.project_text {
+    position: relative;
+    padding-left: 30px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.project_text::after {
+    position: absolute;
+    content: '';
+    border-bottom: 15px solid #fbfaf8;
+    border-top: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    top: -30px;
+    left: 20px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.project_img {
+    position: relative;
+}
+
+.overly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(80, 79, 78, 0.6);
+    opacity: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.project_img:hover .overly{
+    opacity: 1;
+}
+
+.project_img:hover .project_text::after {
+    border-bottom: 15px solid #362f2d;
+}
+
+.project_img:hover .project_text {
+    background: #362f2d;
+}
+
+.project_img .overly i {
+    color: #fff;
+    font-size: 20px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.project_img .overly .one {
+    position: absolute;
+    left: 145px;
+    top: 36%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.project_img .overly .two {
+    position: absolute;
+    right: 145px;
+    top: 36%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.overly a i:hover {
+    color: var(--hover);
+}
+/* ==================================================
+            project css end
+================================================== */
+/* ==================================================
+            video css start
+================================================== */
+#video {
+    padding: 210px 0 250px;
+    margin-bottom: 80px;
+}
+
+.video_text {
+    width: 600px;
+}
+
+.video_text h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: var(--raleway);
+    padding-bottom: 12px;
+}
+
+.video_text p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: var(--monstrat);
+    line-height: 28px;
+}
+
+.video_text a {
+    color: #fff;
+    font-size: 70px;
+    margin-bottom: 35px;
+    height: 100px;
+    width: 100px;
+    background: rgba(82, 87, 91, 0.6);
+    line-height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+/* ==================================================
+            video css end
+================================================== */
+/* ==================================================
+            mobile css start
+================================================== */
+/* .mobile_img img{
+    width: 100%;
+    max-width: 100%;
+} */
+
+
+.mobile_text h4{
+    color: var(--heading);
+    font-family: var(--raleway);
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 111px;
+}
+
+.mobile_text p{
+    color: var(--paragraph);
+    font-family: var(--monstrat);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    padding: 40px 0;
+}
+
+.mobile_text ul li{
+    color: var(--paragraph);
+    font-family: var(--monstrat);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 32px;
+    margin-left: 46px;
+}
+
+.mobile_text ul li i{
+    background-color: var(--hover);
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 8px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+/* ==================================================
+            mobile css end
+================================================== */
+/* ==================================================
+            counter css start
+================================================== */
+#counter{
+    padding: 69px 0 60px;
+    background: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+}
+
+.count_col{
+    /* width: 20%; */
+    width: 950px;
+    text-align: center;
+}
+
+.count_col i{
+    padding-bottom: 25px;
+    font-size: 40px;
+    color: #c7b299;
+}
+
+.count_col h3{
+    font-size: 48px;
+    color: #fff;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.count_col h4{
+    padding-bottom: 5px;
+    font-size: 14px;
+    color: #c7b299;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    padding-bottom: 25px;
+}
+
+.count_col h4::after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    bottom: 0;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+/* ==================================================
+            counter css end
+================================================== */
+/* ==================================================
+            recent css start
+================================================== */
+#recent{
+    padding: 80px 0;
+}
+
+.recent_row{
+    width: 33.33%;
+}
+
+.recent_text{
+    padding-left: 30px;
+    padding-top: 15px;
+    transition: all liner .3s;
+    -webkit-transition: all liner .3s;
+    -moz-transition: all liner .3s;
+    -ms-transition: all liner .3s;
+    -o-transition: all liner .3s;
+}
+
+.recent_text h3{
+    color: var(--heading);
+    font-family: var(--raleway);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.recent_text p{
+    color: var(--paragraph);
+    font-family: var(--monstrat);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-top: 22px;
+    margin-bottom: 26px;
+}
+
+.recent_text h4{
+    color: var(--hover);
+    font-family: var(--monstrat);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
+.recent_text h4 i{
+    color: var(--hover);
+}
+
+.recent_img{
+    position: relative;
+
+}
+
+/* .recent_img img{
+    width: 100%;
+    max-width: 100%;
+
+} */
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.recent_box:hover .overlay{
+    opacity: 1;
+}
+
+.recent_box:hover .recent_text{
+    background-color: #362f2d;
+}
+
+.recent_box:hover .recent_text h3{
+color: #c7b299;
+}
+
+.recent_box:hover .recent_text p{
+    color: #fff;
+}
+
+/* ==================================================
+            recent css end
+================================================== */
+/* ==================================================
+            brands css start
+================================================== */
+#client {
+    padding: 140px 0;
+}
+
+.clien_col {
+    width: 25%;
+}
+
+.clien_logo {
+    padding: 0 45px;
+}
+
+.clien_logo:first-child,
+.clien_logo:last-child {
+    padding: 0 30px;
+}
+
+/* ==================================================
+            brands css end
+================================================== */
+
+/* ==================================================
+            footer css end
+================================================== */
+.footer_top {
+    padding-top: 80px;
+    background: #191919;
+}
+
+.footer_1st {
+    width: 25%;
+    margin-right: 40px;
+}
+
+.footer_text p {
+    margin-top: 30px;
+    color: var(--paragraph);
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+}
+
+.footer_text a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 33px;
+}
+
+.footer_text a i {
+    margin-left: 9px;
+    font-size: 14px;
+}
+
+.footer_2nd {
+    width: 25%;
+    margin-right: 40px;
+}
+
+.coommon_hed {
+    margin-top: 23px;
+}
+
+.coommon_hed h4 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+.texxt h6 {
+    color: #363636;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 22px;
+}
+.texxt h6:hover{
+    color: #fff;
+}
+.texxt p:hover{
+    color: var(--hover);
+}
+.texxt p {
+    /* display: block; */
+     font-size: 14px;
+    font-weight: 300;
+    color: var(--paragraph);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 20px;
+    padding-top: 5px;
+}
+
+.texxt p:nth-child(2),
+.texxt p:nth-child(4) {
+    border-bottom: 1px solid #252525;
+    padding-bottom: 21px;
+}
+
+.footer_3rd {
+    width: 25%;
+    margin-right: 40px;
+}
+
+.texxt3rd_ h6 {
+    color: var(--paragraph);
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 18px;
+}
+
+.texxt3rd_ h6 span {
+    color: #00bff3;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.texxt3rd_ p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #363636;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 20px;
+    padding-top: 2px;
+}
+
+.texxt3rd_ p:nth-child(2) {
+    border-bottom: 1px solid #252525;
+    padding-bottom: 21px;
+}
+.texxt3rd_ p:nth-child(4) {
+    border-bottom: 1px solid #252525;
+    padding-bottom: 20px;
+}
+.texxt3rd_ h6:nth-child(3){
+    margin-top: 10px;
+}
+.footer_img {
+    width: 25%;
+}
+.footer_photo{
+    flex-wrap: wrap;
+}
+.footer_photo img{
+    width: 44%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+} 
+.footer_photo{
+    margin-top: 25px;
+}
+
+.footer_bottom{
+    padding: 47px 0 52px;
+    background: #111111;
+}
+.copy h5,
+.design h5{
+    color: var(--paragraph);
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.design{
+    margin-left: 442px;
+}
+
+.copy h5{
+    font-family: var(--monstrat);
+    color: var(--paragraph);
+    font-weight: 300;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.copy h5 span{
+    font-family: var(--monstrat);
+    color: #959595;
+    font-weight: 300;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.copy h5 span:hover{
+    color: var(--hover);
+}
+
+.design h5{
+    font-family: var(--monstrat);
+    color: var(--paragraph);
+    font-weight: 300;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.design h5 span{
+    font-family: var(--monstrat);
+    color: #959595;
+    font-weight: 300;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+/* ==================================================
+            footer css end
+================================================== */
