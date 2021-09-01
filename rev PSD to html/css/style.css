@@ -165,10 +165,53 @@ img {
             banner css end
 ==========================================*/
 /* ========================================
-            menu css start
+            about css start
 ==========================================*/
+#about {
+	padding: 90px 0;
+}
+
+.com_heading h2 {
+	font-family: var(--kscript);
+	font-weight: 400;
+	font-size: 24px;
+}
+
+.com_heading h3 {
+	font-family: var(--monserrat);
+	font-weight: 700;
+	font-size: 30px;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.com_heading h3::before {
+	position: absolute;
+	content: "";
+	left: 570px;
+	bottom: -40px;
+	height: 3px;
+	width: 60px;
+	background-color: #f38181;
+}
+
+.com_heading p {
+	color: #999999;
+	font-size: 15px;
+	line-height: 24px;
+	font-family: var(--monserrat);
+	margin-top: 70px;
+	font-weight: 400;
+}
+
+#about .imgbox {
+	width: 30%;
+	background: red;
+	height: 200px;
+}
+
 /* ========================================
-            menu css end
+            about css end
 ==========================================*/
 /* ========================================
             menu css start
