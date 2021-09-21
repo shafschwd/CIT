@@ -1,0 +1,65 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?3e227066e6b1253a75147f734027a5b8") format("truetype"),
+url("./flaticon.woff?3e227066e6b1253a75147f734027a5b8") format("woff"),
+url("./flaticon.woff2?3e227066e6b1253a75147f734027a5b8") format("woff2"),
+url("./flaticon.eot?3e227066e6b1253a75147f734027a5b8#iefix") format("embedded-opentype"),
+url("./flaticon.svg?3e227066e6b1253a75147f734027a5b8#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "buddhist-yoga-pose": "\f101",
+    "weightlifting": "\f102",
+    "exercise": "\f103",
+    "man-boxing": "\f104",
+    "man-exercising-on-the-floor": "\f105",
+    "man-jumping-rope": "\f106",
+    "exercise-1": "\f107",
+    "weightlifting-1": "\f108",
+    "pull-up": "\f109",
+    "man-doing-yoga": "\f10a",
+);
+
+.flaticon-buddhist-yoga-pose:before {
+    content: map-get($flaticon-map, "buddhist-yoga-pose");
+}
+.flaticon-weightlifting:before {
+    content: map-get($flaticon-map, "weightlifting");
+}
+.flaticon-exercise:before {
+    content: map-get($flaticon-map, "exercise");
+}
+.flaticon-man-boxing:before {
+    content: map-get($flaticon-map, "man-boxing");
+}
+.flaticon-man-exercising-on-the-floor:before {
+    content: map-get($flaticon-map, "man-exercising-on-the-floor");
+}
+.flaticon-man-jumping-rope:before {
+    content: map-get($flaticon-map, "man-jumping-rope");
+}
+.flaticon-exercise-1:before {
+    content: map-get($flaticon-map, "exercise-1");
+}
+.flaticon-weightlifting-1:before {
+    content: map-get($flaticon-map, "weightlifting-1");
+}
+.flaticon-pull-up:before {
+    content: map-get($flaticon-map, "pull-up");
+}
+.flaticon-man-doing-yoga:before {
+    content: map-get($flaticon-map, "man-doing-yoga");
+}
