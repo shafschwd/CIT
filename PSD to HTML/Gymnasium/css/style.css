@@ -656,19 +656,19 @@ li {
 	font-weight: 400;
 	line-height: 18px;
 	color: #dddddd;
+	padding: 20px 0;
 }
 
 #testimonial .slick-dots {
 	display: flex;
 	position: absolute;
 	left: 50%;
-	bottom: -27%;
-	transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	-o-transform: translate(-50%, -50%);
-	padding-bottom: 10px;
+	bottom: 1px;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
 	width: auto;
 }
 
@@ -829,28 +829,28 @@ li {
 	background: var(--hover);
 }
 
-.class_body ul li{
+.class_body ul li {
 	width: 19.6%;
 	margin: 0 5px 5px 0;
 	background: #ddd;
 	padding: 50px 0;
-	transition: all linear .3s;
-	-webkit-transition: all linear .3s;
-	-moz-transition: all linear .3s;
-	-ms-transition: all linear .3s;
-	-o-transition: all linear .3s;
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+	-moz-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+	-o-transition: all linear 0.3s;
 }
 
-.class_body ul li:hover{
+.class_body ul li:hover {
 	background: var(--hover);
 }
 
 .class_body ul li:nth-child(5),
-.class_body ul li:nth-child(10){
+.class_body ul li:nth-child(10) {
 	margin: 0 0 5px 0;
 }
 
-.class_body ul li h2{
+.class_body ul li h2 {
 	font-size: 16px;
 	font-weight: 400;
 	font-family: var(--sans);
@@ -858,28 +858,27 @@ li {
 	text-transform: capitalize;
 }
 
-.class_body ul li:hover h2{
+.class_body ul li:hover h2 {
 	color: #ffff;
 }
 
-.class_body ul li h3{
+.class_body ul li h3 {
 	font-size: 14px;
 	font-weight: 400;
 	font-family: var(--sans);
 	color: #444444;
 }
 
-.class_body ul li:hover h3{
+.class_body ul li:hover h3 {
 	color: #fff;
 }
 
-.class_body ul li i{
+.class_body ul li i {
 	font-size: 50px;
 	color: #444444;
 }
 
-
-.class_body ul li:hover i{
+.class_body ul li:hover i {
 	color: #fff;
 }
 
@@ -890,15 +889,24 @@ li {
             brand css end
 ==========================================*/
 
-#brand{
+#brand {
 	padding: 80px 0;
 }
 
-.brand_slider img{
+.brand_slider img {
 	margin-right: 5px;
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+	-moz-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+	-o-transition: all linear 0.3s;
 }
 
-.brand_slider img:nth-child(5){
+.brand_slider img:hover {
+	box-shadow: 1px 2px 10px 2px rgba(0, 0, 0, 0.212);
+}
+
+.brand_slider img:nth-child(5) {
 	margin-right: 0;
 }
 
@@ -913,11 +921,11 @@ li {
 	-o-transform: translateY(-50%);
 	color: #444444;
 	font-size: 25px;
-	transition: all linear .3s;
-	-webkit-transition: all linear .3s;
-	-moz-transition: all linear .3s;
-	-ms-transition: all linear .3s;
-	-o-transition: all linear .3s;
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+	-moz-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+	-o-transition: all linear 0.3s;
 }
 
 .nextarrow {
@@ -931,11 +939,11 @@ li {
 	-o-transform: translateY(-50%);
 	color: #444444;
 	font-size: 25px;
-	transition: all linear .3s;
-	-webkit-transition: all linear .3s;
-	-moz-transition: all linear .3s;
-	-ms-transition: all linear .3s;
-	-o-transition: all linear .3s;
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+	-moz-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+	-o-transition: all linear 0.3s;
 }
 
 .nextarrow:hover {
@@ -943,7 +951,7 @@ li {
 }
 
 .prevarrow:hover {
-    color: var(--hover);
+	color: var(--hover);
 }
 /* ======================================
             brand css end
@@ -951,7 +959,7 @@ li {
 /* ======================================
             footer css end
 ==========================================*/
-#footer::before{
+#footer::before {
 	background: rgba(0, 0, 0, 0.8);
 }
 
@@ -960,11 +968,11 @@ li {
 	border-bottom: 1px solid #fff;
 }
 
-.footer_mid{
+.footer_mid {
 	padding: 30px 0;
 }
 
-.footer_mid h2{
+.footer_mid h2 {
 	font-size: 14px;
 	color: #fff;
 	font-weight: 400;
@@ -973,7 +981,7 @@ li {
 	margin-bottom: 30px;
 }
 
-.footer_mid ul li{
+.footer_mid ul li {
 	font-size: 13px;
 	color: #dddddd;
 	font-weight: 400;
@@ -981,7 +989,7 @@ li {
 	text-transform: capitalize;
 }
 
-.feeds p{
+.feeds p {
 	font-size: 13px;
 	color: #dddddd;
 	font-weight: 400;
@@ -991,29 +999,36 @@ li {
 	line-height: 18px;
 }
 
-.feeds p span{
+.feeds p span {
 	display: block;
 	font-weight: 600;
 }
 
-.feeds p i{
+.feeds p i {
 	color: #5da9dd;
 	position: absolute;
 	left: 10px;
 	top: 5px;
 }
 
-.flickr ul li{
-	margin: 0 6px 6px 0;
+.flickr ul li {
+	margin: 0 9px 9px 0;
 }
 
-.flickr img:nth-child(4),
-.flickr img:nth-child(8),
-.flickr img:nth-child(12){
-	margin: 0 0 5px 0;
+.flickr li:nth-child(4),
+.flickr li:nth-child(8),
+.flickr li:nth-child(12) {
+	margin: 0 0 9px 0;
 }
 
-.contact p{
+.flickr li:nth-child(9),
+.flickr li:nth-child(10),
+.flickr li:nth-child(11),
+.flickr li:nth-child(12) {
+	margin-bottom: 0;
+}
+
+.contact p {
 	font-size: 13px;
 	line-height: 18px;
 	font-family: var(--sans);
@@ -1022,11 +1037,11 @@ li {
 	margin: 0;
 }
 
-.contact p span{
+.contact p span {
 	margin-left: 10px;
 }
 
-.contact h3 a{
+.contact h3 a {
 	font-size: 13px;
 	line-height: 18px;
 	font-family: var(--sans);
@@ -1034,7 +1049,7 @@ li {
 	color: #dddddd;
 }
 
-.contact h4 a{
+.contact h4 a {
 	font-size: 13px;
 	line-height: 18px;
 	font-family: var(--sans);
@@ -1043,16 +1058,16 @@ li {
 	margin-bottom: 12px;
 }
 
-.contact p i{
+.contact p i {
 	color: var(--hover);
 }
 
-.contact  h3 a i,
-.contact  h4 a i{
+.contact h3 a i,
+.contact h4 a i {
 	color: var(--hover);
 }
 
-.contact ul li a{
+.contact ul li a {
 	font-size: 16px;
 	border: 1px solid #ffff;
 	height: 30px;
@@ -1061,29 +1076,28 @@ li {
 	text-align: center;
 	color: #fff;
 	margin-right: 10px;
-	transition: all linear .3s;
-	-webkit-transition: all linear .3s;
-	-moz-transition: all linear .3s;
-	-ms-transition: all linear .3s;
-	-o-transition: all linear .3s;
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+	-moz-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+	-o-transition: all linear 0.3s;
 }
 
-.contact ul li:hover a{
+.contact ul li:hover a {
 	background-color: var(--hover);
 	border-color: var(--hover);
 }
 
-.contact ul li a:nth-child(5){
+.contact ul li a:nth-child(5) {
 	margin-right: 0;
 }
 
-
-.footer_bottom{
+.footer_bottom {
 	padding: 20px;
 	border-top: 1px solid #fff;
 }
 
-.footer_bottom p{
+.footer_bottom p {
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 18px;
@@ -1091,7 +1105,7 @@ li {
 	color: #dddddd;
 }
 
-.footer_bottom a{
+.footer_bottom a {
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 18px;

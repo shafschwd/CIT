@@ -1,3 +1,5 @@
+/** @format */
+
 $(function () {
 	"use strict";
 
@@ -25,20 +27,20 @@ $(function () {
 	});
 
 	//counter
-	$('.counter_up').counterUp({
+	$(".counter_up").counterUp({
 		delay: 10,
-		time: 1000
+		time: 1000,
 	});
 
 	//brand slider
 	$(".brand_slider").slick({
 		slidesToShow: 5,
 		slidesToScroll: 1,
-		autoplay: true,
+		autoplay: false,
 		autoplaySpeed: 2000,
 		arrows: true,
 		nextArrow: '<i class="fas fa-chevron-right nextarrow"></i>',
-    	prevArrow: '<i class="fas fa-chevron-left prevarrow"></i>',
+		prevArrow: '<i class="fas fa-chevron-left prevarrow"></i>',
 		dots: false,
 	});
 });
