@@ -38,12 +38,8 @@
 	}
 
 	.main_menu #navbarSupportedContent {
-		background: #e23e38;
+		background: #323232;
 		text-align: center;
-	}
-
-	.main_menu ul li a::before {
-		display: none;
 	}
 
 	.main_menu ul li a::after {
